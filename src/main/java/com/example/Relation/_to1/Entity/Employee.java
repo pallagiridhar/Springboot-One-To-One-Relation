@@ -11,10 +11,9 @@ public class Employee {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int empId;
 
-    @Column
+
     private String eName;
 
-    @Column
     private int eAge;
 
     @OneToOne(cascade =CascadeType.ALL,fetch = FetchType.EAGER, orphanRemoval = true)
